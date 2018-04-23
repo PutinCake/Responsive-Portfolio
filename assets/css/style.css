@@ -169,7 +169,10 @@ h1{
     width: 200px;
     height: 200px;
     float: left;
-  
+    transition: width 2s;
+    -moz-transition:width 2s; /* Firefox 4 */
+    -webkit-transition:width 2s; /* Safari and Chrome */
+    -o-transition:width 2s;
 }
 
 /*Portfolio frame div*/
@@ -179,6 +182,11 @@ h1{
     position: relative;
     float: left;
     padding: 5px;
+}
+
+.portfolios:hover{
+    width: 250px;
+    height: 250px;
 }
 
 /*Portfolios comments*/
